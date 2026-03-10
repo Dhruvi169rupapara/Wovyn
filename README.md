@@ -25,10 +25,10 @@ Wovyn is a modern, full-stack e-commerce platform designed for the fashion indus
 
 | Layer | Technologies |
 | :--- | :--- |
-| **Frontend** | React 19, Vite, Redux Toolkit, Tailwind CSS, Framer Motion, Lucide React, Axios |
+| **Frontend** | React 19, Vite, Redux Toolkit, Tailwind CSS, Lucide React, Axios |
 | **Backend** | Node.js, Express, Prisma ORM, PostgreSQL |
 | **Auth** | JSON Web Tokens (JWT), Bcrypt |
-| **Tools** | PostCSS, Autoprefixer, ESLint, Nodemon |
+| **Tools** | Nodemon |
 
 ---
 
