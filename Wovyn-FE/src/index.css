@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+  --primary: #c47e35;
+  --secondary: #8f4f21;
+  --accent: #e9b93e;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  @apply bg-background text-text-main antialiased;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+#root {
+  width: 100%;
+}
+
+.orb {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: 1;
+  opacity: 0.2;
+}
+
+.orb-1 {
+  top: -10%;
+  left: -10%;
+  background: theme('colors.primary.DEFAULT');
+}
+
+.orb-2 {
+  bottom: -10%;
+  right: -10%;
+  background: theme('colors.secondary');
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card-bg backdrop-blur-xl border border-glass-border rounded-3xl;
+  }
+
+  .btn-primary {
+    @apply w-full py-3 px-4 rounded-xl font-bold transition-all duration-200 bg-primary text-white shadow-lg shadow-primary/20 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/30 active:translate-y-0;
+  }
+
+  .form-input {
+    @apply w-full bg-glass border border-glass-border rounded-xl px-4 py-3 text-text-main outline-none transition-all duration-200 focus:border-primary focus:bg-white/10;
+  }
+}

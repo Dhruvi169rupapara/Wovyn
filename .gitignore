@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+**/node_modules/
+**/dist/
+**/.env
+**/*.log
+
+# Project specific ignores
+/Wovyn-BE/src/uploads/*
+!/Wovyn-BE/src/uploads/.gitkeep
